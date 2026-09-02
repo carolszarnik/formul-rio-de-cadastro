@@ -19,4 +19,4 @@ Um formulário de cadastro web simples, moderno e intuitivo, desenvolvido com fo
 
 1. Clone este repositório:
    ```bash
-   git clone (https://github.com/carolszarnik/formul-rio-de-cadastro)
+   https://github.com/carolszarnik/formul-rio-de-cadastro
