@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+fieldset {
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fafbfc;
+}
+
+legend {
+    font-weight: bold;
+    color: #34495e;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.group-title {
+    margin-bottom: 8px;
+}
+
+/* Estilização padrão de entradas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    outline: none;
+    background-color: #fff;
+}
+
+/* ===================================================
+   ITEM 3 DA ATIVIDADE: VALIDAÇÃO GRÁFICA (CSS)
+   =================================================== */
+
+/* Entrada com dados INVÁLIDOS após interação/preenchimento */
+input:user-invalid,
+select:user-invalid {
+    border-color: #e53e3e !important;
+    background-color: #fff5f5;
+}
+
+/* Entrada com dados VÁLIDOS após preenchimento */
+input:user-valid,
+select:user-valid {
+    border-color: #38a169 !important;
+    background-color: #f0fff4;
+}
+
+/* Estilo ao focar no campo */
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+}
+
+/* Ajustes específicos para Radio, Checkbox, Range e Color */
+.options-inline {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.options-inline label {
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #3182ce;
+}
+
+details {
+    background-color: #edf2f7;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: #2b6cb0;
+}
+
+/* Botão de Envio */
+button[type="submit"] {
+    width: 100%;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2b6cb0;
+}
